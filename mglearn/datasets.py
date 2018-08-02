@@ -37,7 +37,7 @@ def load_extended_boston():
 
 
 def load_citibike():
-    data_mine = pd.read_csv(os.path.join(DATA_PATH, "citibike.csv"))
+    data_mine = pd.read_csv("/home/arpit/study/ML/github/Intro_to_machine_learning_with_python/data/citibike.csv")
     data_mine['one'] = 1
     data_mine['starttime'] = pd.to_datetime(data_mine.starttime)
     data_starttime = data_mine.set_index("starttime")
